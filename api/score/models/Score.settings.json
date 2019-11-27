@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "pontuacaos",
+  "info": {
+    "name": "score",
+    "description": "Responsável,por guardar informações de pontuações dos estudantes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "score": {
+      "type": "decimal"
+    },
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    }
+  }
+}
